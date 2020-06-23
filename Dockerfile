@@ -1,5 +1,5 @@
-FROM centos:latest
-RUN yum -y install httpd
+FROM    centos:latest
+RUN  yum install httpd  -y
 COPY index.html /var/www/html/
-CMD [“/usr/sbin/httpd”, “-D”, “FOREGROUND”]
-EXPOSE 80
+EXPOSE  81
+CMD     ["/usr/sbin/httpd","-D","FOREGROUND"]
